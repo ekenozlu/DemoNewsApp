@@ -110,6 +110,7 @@
 				6335C4332A24A3850011F72D /* AppDelegate.swift */,
 				6335C4352A24A3850011F72D /* SceneDelegate.swift */,
 				6335C4372A24A3850011F72D /* ViewController.swift */,
+				636A82B82A25326C0094945F /* SearchViewController.swift */,
 				6335C4632A24A4E10011F72D /* APICaller.swift */,
 				6335C4392A24A3850011F72D /* Main.storyboard */,
 				6335C43C2A24A3870011F72D /* Assets.xcassets */,
@@ -117,7 +118,6 @@
 				6335C4412A24A3870011F72D /* Info.plist */,
 				6335C4672A24C46B0011F72D /* NewsCell.swift */,
 				636A82B42A2525590094945F /* CategoryCollectionViewCell.swift */,
-				636A82B82A25326C0094945F /* SearchViewController.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";

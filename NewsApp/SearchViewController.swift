@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SearchViewController: UIViewController, UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource {
     
@@ -59,6 +60,16 @@ class SearchViewController: UIViewController, UISearchBarDelegate,UITableViewDel
             newsCell.cellImageView?.contentMode = .center
         }
         return newsCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let selectedURL = URL(string: searchNewsArray[indexPath.row].url ?? "") else {
+            return
+        }
+        let vc = SFSafariViewController(url: selectedURL)
+        self.present(vc, animated: true)
     }
 
 }
