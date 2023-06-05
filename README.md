@@ -1,5 +1,5 @@
-e# DemoApp News App
-In this demo app I created a News application on Swift with Storyboard.
+# DemoApp News App
+In this demo app I created a News application on Swift with Storyboard. I used NewsAPI for data.
 
 ## App Contains:
 1. Popular news from United States
