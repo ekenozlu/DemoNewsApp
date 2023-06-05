@@ -43,22 +43,6 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         }
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if !(searchText.isEmpty){
-            APICaller.shared.search(with: searchText) { result in
-                switch result {
-                case .success(let articles):
-                    self.newsArray = articles
-                    DispatchQueue.main.async {
-                        self.newsTableView.reloadData()
-                    }
-                case .failure(let error):
-                    print(error)
-                }
-            }
-        }
-    }
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categoryArray.count
     }
@@ -72,6 +56,7 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        title = "Popular News About " + categoryArray[indexPath.row].categoryText
         APICaller.shared.getCategoryHeadlines(with: categoryArray[indexPath.row].categoryApiLabel) { result in
             switch result {
             case .success(let articles):

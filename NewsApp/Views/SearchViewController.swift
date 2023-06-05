@@ -63,7 +63,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate,UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+        searchTableView.deselectRow(at: indexPath, animated: true)
         
         guard let selectedURL = URL(string: searchNewsArray[indexPath.row].url ?? "") else {
             return

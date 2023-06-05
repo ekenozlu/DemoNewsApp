@@ -94,35 +94,3 @@ final class APICaller {
     }
     
 }
-
-
-//Model
-
-struct NewsCategory {
-    let categoryApiLabel : String
-    let categoryText : String
-    let categoryImage : UIImage
-}
-
-struct APIResponse: Codable {
-    let totalResponse : Int?
-    let articles : [Articles]
-}
-
-struct Articles: Codable {
-    let source : Source
-    let author : String?
-    let title : String?
-    let description : String?
-    let url : String?
-    let urlToImage : String?
-    let publishedAt : String?
-    let content : String?
-}
-
-struct Source : Codable {
-    let name : String
-}
-
-
-//https://newsapi.org/v2/top-headlines?apiKey=75d49b8f9121404c9ffd1843321413f4
