@@ -20,8 +20,12 @@ In this demo app I created a News application on Swift with Storyboard. I used N
   * Bar Item and Title
   * Search Bar
 
-![alt text](https://github.com/ekenozlu/DemoNewsApp/blob/main/popular_news_screen.png "Popular News Screen")
+| Popular News Screen                 | Search News Screen                  | Safari Screen                               |
+| ----------------------------------- | ----------------------------------- | ------------------------------------------- |
+| ![Popular News Screen](https://github.com/ekenozlu/DemoNewsApp/blob/main/popular_news_screen.png "Popular News Screen") | ![Search News Screen](https://github.com/ekenozlu/DemoNewsApp/blob/main/search_news_screen.png "Search News Screen") | ![Safari Screen](https://github.com/ekenozlu/DemoNewsApp/blob/main/news_safari_screen.png "Safari Screen") |
 
-![alt text](https://github.com/ekenozlu/DemoNewsApp/blob/main/search_news_screen.png "Search News Screen")
 
-![alt text](https://github.com/ekenozlu/DemoNewsApp/blob/main/news_safari_screen.png "Safari Screen")
+
+
+
+
